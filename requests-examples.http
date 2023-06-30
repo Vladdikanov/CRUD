@@ -7,8 +7,8 @@ POST {{baseUrl}}/products/
 Content-Type: application/json
 
 {
-  "title": "Авокадо",
-  "description": "Зелененький"
+  "title": "Апельсин",
+  "description": "Сочный сочный сочный"
 }
 
 ###
@@ -24,7 +24,7 @@ PATCH {{baseUrl}}/products/1/
 Content-Type: application/json
 
 {
-  "description": "Самые сочные и ароматные помидорки"
+  "description": "Самые сочные и ароматные авокадо"
 }
 
 ###
@@ -36,7 +36,7 @@ Content-Type: application/json
 ###
 
 # поиск продуктов по названию и описанию
-GET {{baseUrl}}/products/?search=помидор
+GET {{baseUrl}}/products/?search=Апельсин
 Content-Type: application/json
 
 ###
@@ -46,7 +46,7 @@ POST {{baseUrl}}/stocks/
 Content-Type: application/json
 
 {
-  "address": "Какойсклад",
+  "address": "Склад2",
   "positions": [
     {
       "product": 2,
@@ -70,14 +70,19 @@ Content-Type: application/json
 {
   "positions": [
     {
+      "product": 3,
+      "quantity": 120,
+      "price": 130.80
+    },
+    {
       "product": 2,
-      "quantity": 100,
+      "quantity": 140,
       "price": 130.80
     },
     {
       "product": 1,
-      "quantity": 243,
-      "price": 145
+      "quantity": 120,
+      "price": 130.80
     }
   ]
 }

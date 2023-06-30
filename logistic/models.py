@@ -7,6 +7,7 @@ class Product(models.Model):
     description = models.TextField(null=True, blank=True)
 
 
+
 class Stock(models.Model):
     address = models.CharField(max_length=200, unique=True)
     products = models.ManyToManyField(
