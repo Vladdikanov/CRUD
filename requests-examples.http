@@ -36,7 +36,7 @@ Content-Type: application/json
 ###
 
 # поиск продуктов по названию и описанию
-GET {{baseUrl}}/products/?search=Апельсин
+GET {{baseUrl}}/products/?search=сочные
 Content-Type: application/json
 
 ###
@@ -71,7 +71,7 @@ Content-Type: application/json
   "positions": [
     {
       "product": 3,
-      "quantity": 120,
+      "quantity": 200,
       "price": 130.80
     },
     {
